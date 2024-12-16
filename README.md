@@ -10,17 +10,29 @@ The purpose of this repository and the sharing of this configuration is to serve
 
 To be more opaque: The use case envisioned here is helping whistleblowers.
 
-While in general I try to consolidate my LLM assistant configurations in a single repository, occasionally I feel that the projects are potentially significant enough to warrant their own repositories.
+While in general I try to consolidate my LLM assistant configurations in a single repository (see: [Custom LLM Agents](https://github.com/danielrosehill/Custom-LLM-Agents)), occasionally I feel that the projects are potentially significant enough to warrant their own repositories.
 
 ## Notes About Context & Approach
 
-When redacting information, whistleblowers commonly take the approach of trying to substitute identifiable or indirectly identifiable information with replacement data that alters particulars which are unimportant in the broad context. The intention in developing this assistant was to try to bring a little bit of automation to the process in order to make it as easy as possible.
+When redacting information, whistleblowers commonly take the approach of trying to substitute identifiable or indirectly identifiable information with replacement data that alters particulars which are unimportant in the broad context. I thought that this would be a good task for a large language model, provided that it was able to distinguish between information that requires and did not require changes.
 
-As in any use case involving AI, human supervision is warranted and recommended. These configurations were written with the assumption that the user in question would likely wish to scrutinize carefully the modified output.
+As in any use case involving AI, human supervision is both warranted and recommended. These configurations were written with the assumption that the user in question would likely wish to scrutinize carefully the modified output.
 
- The configuration Includes specifics about what type of personal information should always be redacted. The example provided in V-1 Is intended to guide the assistant in the style to be followed. It does require that the model leverage some inference in order to distinguish autonomously between information that *must* be redacted in all cases and information which must *never* be redacted in any case.  
+The configuration Includes specifics about what type of personal information should always be redacted And these could be easily modified according to requirements. V2 is an LLM improved version of the first configuration. It's made available both in `JSON` and `Markdown` and sets out these elements a little bit more deterministically. 
 
-Taking this configuration as a starting point, there are several variations on this theme which could also be helpful and useful. One example is that the Assistant could be configured to proposed substitutions for identifiable data before implementing them. This could prevent the situation in which these substitute synthetic data which the LLM decides upon is not sufficiently distinguished from the real facts. This configuration is intended more as a proof of concept and to demonstrate the use case than as a definitive text. But it's hoped that it will provide some utility for those requiring its services. .    
+The example provided in`V1` Is intended to guide the assistant in the style to be followed. It does require that the model leverage some inference in order to distinguish autonomously between information that *must* be redacted in all cases and information which must *never* be redacted in any case.  
+
+## Ideas For Variants
+
+Taking this configuration as a starting point, there are several variations on this theme which could also be helpful and useful. 
+
+- One example is that the Assistant could be configured to proposed substitutions for identifiable data before implementing them. This could prevent the situation in which these substitute synthetic data which the LLM decides upon is not sufficiently distinguished from the real facts. 
+
+This configuration is intended more as a proof of concept and to demonstrate the use case than as a definitive text. But it's hoped that it will provide some utility for those requiring its services.
+
+To generate synthetic data for your own test cases, using an abliterated or uncensored large language model Is not only recommended, but may be necessary depending upon the model's threshold for generating refusals.
+
+If you sadly have to include graphic descriptions of a particular kind to validate that the model will handle working with data which is representative of a situation you might require it for, these models are probably essential. The two fictitious diaries in the test data folder are simply intended to be representative of synthetic data describing instances of workplace harassment. 
 
 ## Demonstration Documents
 
