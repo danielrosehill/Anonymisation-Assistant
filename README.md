@@ -34,9 +34,9 @@ To generate synthetic data for your own test cases, using an abliterated or unce
 
 If you sadly have to include graphic descriptions of a particular kind to validate that the model will handle working with data which is representative of a situation you might require it for, these models are probably essential. The two fictitious diaries in the test data folder are simply intended to be representative of synthetic data describing instances of workplace harassment. 
 
-## Demonstration Documents
+## Demonstration Documents, Testing, Validation
 
-The test data folder provides examples of the `V1` configuration which I wrote by hand in action. 
+The test data folder provides examples of the `V1` configuration which I wrote. 
 
 The underlying model was `Llama 3.3 70B Instruct `as hosted and deployed on Hugging Face Chat.
 
