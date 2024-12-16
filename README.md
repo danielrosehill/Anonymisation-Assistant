@@ -2,9 +2,9 @@
 
 *17-Dec-24*
 
-[![View on Hugging Face](https://img.shields.io/badge/View%20on-Hugging%20Face-ff9b34?style=for-the-badge&logo=huggingface&logoColor=white)](https://hf.co/chat/assistant/6760b39606189c9ac0656dd6)
-
 ![alt text](images/header.png)
+
+[![View on Hugging Face](https://img.shields.io/badge/View%20on-Hugging%20Face-ff9b34?style=for-the-badge&logo=huggingface&logoColor=white)](https://hf.co/chat/assistant/6760b39606189c9ac0656dd6)
 
 The purpose of this repository and the sharing of this configuration is to serve the public good in a very small way by providing one or possibly more model configurations for large language model assistants instructed to help the user with anonymizing documents for the purpose of safely sharing information without disclosing ones personal identity. 
 
